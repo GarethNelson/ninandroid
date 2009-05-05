@@ -1,0 +1,12 @@
+#summary List of features to implement
+
+List of features that need implementing:
+
+  * PhotoBlog
+  * NewsUpdates
+  * PodcastPlayer
+  * NearbyUsers
+  * ForumInterface
+  * MessagesClient
+  * WallpapersCollection
+  * ImagesGallery
