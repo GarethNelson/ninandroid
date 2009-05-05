@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout android:id="@+id/TableLayout01" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+<TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content" android:layout_height="wrap_content" >
+<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:adjustViewBounds="true" android:src="@drawable/login_btn" android:clickable="true" android:id="@+id/LoginBtn">
+</ImageView>
+<ImageView android:id="@+id/ImageView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/top_marquee">
+</ImageView>
+
+</TableRow>
+<TableRow android:id="@+id/TableRow02" android:layout_height="fill_parent" android:layout_width="fill_parent" android:orientation="vertical" android:minHeight="320dp" android:minWidth="400dp" android:clipChildren="false" android:baselineAligned="true">
+    <WebView 
+        android:id="@+id/webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+    />
+
+</TableRow>
+<TableRow android:id="@+id/TableRow03" android:layout_width="wrap_content" android:layout_height="wrap_content"></TableRow>
+
+
+</TableLayout>
