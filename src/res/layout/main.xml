@@ -1,22 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<TableLayout android:id="@+id/TableLayout01" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
-<TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content" android:layout_height="wrap_content" >
-<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:adjustViewBounds="true" android:src="@drawable/login_btn" android:clickable="true" android:id="@+id/LoginBtn">
-</ImageView>
-<ImageView android:id="@+id/ImageView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/top_marquee">
-</ImageView>
+<TableLayout 
+      android:id="@+id/TableLayout01"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+<TableRow android:id="@+id/TableRow01"
+android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="left">
 
+
+<LinearLayout android:id="@+id/LinearLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/top_marquee">
+<ImageView android:layout_height="wrap_content" android:src="@drawable/login_btn" android:clickable="true" android:id="@+id/LoginBtn"  android:layout_width="wrap_content" android:layout_gravity="left|center_vertical" android:layout_marginLeft="5px">
+</ImageView>
+</LinearLayout>
 </TableRow>
-<TableRow android:id="@+id/TableRow02" android:layout_height="fill_parent" android:layout_width="fill_parent" android:orientation="vertical" android:minHeight="320dp" android:minWidth="400dp" android:clipChildren="false" android:baselineAligned="true">
+<TableRow android:id="@+id/TableRow02"
+ android:layout_width="fill_parent" android:orientation="vertical" android:minHeight="320dp" android:minWidth="400dp" android:clipChildren="false" android:baselineAligned="true" android:layout_height="380px">
     <WebView 
         android:id="@+id/webview"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-    />
+        android:layout_width="325px" android:layout_height="380px"/>
 
 </TableRow>
-<TableRow android:id="@+id/TableRow03" android:layout_width="wrap_content" android:layout_height="wrap_content"></TableRow>
+<TableRow android:id="@+id/TableRow03" android:layout_width="wrap_content" android:layout_height="wrap_content"><LinearLayout android:id="@+id/LinearLayout02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bottom_marquee"><ImageButton android:id="@+id/ImageButton01" android:layout_width="wrap_content" android:layout_height="wrap_content"></ImageButton></LinearLayout>
 
+   
+</TableRow>
 
 </TableLayout>

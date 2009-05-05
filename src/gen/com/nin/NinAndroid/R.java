@@ -11,14 +11,17 @@ public final class R {
     public static final class attr {
     }
     public static final class drawable {
-        public static final int default_av=0x7f020000;
-        public static final int icon=0x7f020001;
-        public static final int login_btn=0x7f020002;
-        public static final int top_marquee=0x7f020003;
+        public static final int bottom_marquee=0x7f020000;
+        public static final int default_av=0x7f020001;
+        public static final int icon=0x7f020002;
+        public static final int login_btn=0x7f020003;
+        public static final int top_marquee=0x7f020004;
     }
     public static final class id {
-        public static final int ImageView01=0x7f050003;
-        public static final int LoginBtn=0x7f050002;
+        public static final int ImageButton01=0x7f050008;
+        public static final int LinearLayout01=0x7f050002;
+        public static final int LinearLayout02=0x7f050007;
+        public static final int LoginBtn=0x7f050003;
         public static final int TableLayout01=0x7f050000;
         public static final int TableRow01=0x7f050001;
         public static final int TableRow02=0x7f050004;
