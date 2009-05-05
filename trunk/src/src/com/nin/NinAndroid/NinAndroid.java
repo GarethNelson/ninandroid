@@ -15,7 +15,7 @@ public class NinAndroid extends Activity {
 	    	Toast.makeText(getApplicationContext(), "Login not yet implemented", Toast.LENGTH_SHORT).show();
 	    }
 	};
-
+		
 	WebView webview;
 	/** Called when the activity is first created. */
     @Override
