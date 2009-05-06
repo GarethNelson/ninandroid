@@ -5,6 +5,7 @@ from google.appengine.api import urlfetch
 
 nin_soup = BeautifulSoup.BeautifulSoup(urlfetch.fetch('http://www.nin.com').content) # delicious NIN soup
 nin_soup.findAll(id='photo-discussion-link')[0].extract()
+nin_soup.findAll(href='http://feeds.nin.com/ninphotoblog')[0].extract()
 nin_soup.findAll(id='news-discuss-link')[0].extract()
 nin_soup.findAll(attrs={'class':'clear_both'})[0].extract()
 
@@ -12,6 +13,8 @@ photoblog_tree = nin_soup.findAll(id='photo-blog-container')
 photoblog = str(photoblog_tree[0])
 
 news_tree = nin_soup.findAll(id='news-container') 
+for img in news_tree[0].findAll('img'):
+    img.extract()
 news = str(news_tree[0])
 
 homepage = """
@@ -29,8 +32,8 @@ homepage = """
 </td></tr>
 
 <tr>
-<th>Photo blog</th>
-<th>News</th>
+<th style="width:30%%">Photo blog</th>
+<th style="width:70%%">News</th>
 </tr>
 
 <tr>
