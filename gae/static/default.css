@@ -83,3 +83,15 @@ p.rss-title {padding:0.5em;}
    color: white
    }
 
+p.mobile-photo img {
+   width:100px;
+   height:100px;
+}
+
+#photo-blog-container {
+   font-size: small;
+}
+
+#news-container {
+   font-size: small;
+}
